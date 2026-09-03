@@ -71,6 +71,19 @@ const ROUTE_DIRS = {
   "Refection-toiture-ardoise-Angers.dc.html": "app/refection-toiture-ardoise-angers",
 };
 
+const ROUTES = {
+  "Accueil.dc.html": "/",
+  "Couvreur-Les-Ponts-de-Ce.dc.html": "/couvreur-les-ponts-de-ce",
+  "Refection-toiture-ardoise-Angers.dc.html": "/refection-toiture-ardoise-angers",
+};
+
+// Absolute public origin for the social (og:/twitter:) image URLs.
+const SITE = (process.env.SITE_URL || "https://couverture-vasseur.fr").replace(
+  /\/+$/,
+  "",
+);
+const OG_IMAGE = `${SITE}/og-image.png`;
+
 // Tags that flow inside text (spaces around them are visually meaningful).
 const INLINE = new Set([
   "a", "span", "strong", "em", "u", "small", "b", "i", "br", "img",
@@ -376,6 +389,30 @@ function convert(htmlFile) {
   ]
     .filter(Boolean)
     .join("\n");
+  const title = TITLES[htmlFile] || "";
+  const ogTitle = title.replace(/\s*—\s*Couverture Vasseur.*$/i, "");
+  const openGraph = {
+    title: title || ogTitle,
+    description,
+    type: "website",
+    locale: "fr_FR",
+    url: `${SITE}${ROUTES[htmlFile] || "/"}`,
+    siteName: "Couverture Vasseur",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Couverture Vasseur — couvreur zingueur ardoisier à Angers",
+      },
+    ],
+  };
+  const twitter = {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [OG_IMAGE],
+  };
   const out = `// Generated from Maquette/${htmlFile} by tools/convert-mockups.mjs — do not edit by hand.
 ${imports}
 
@@ -383,8 +420,10 @@ const css = (o: Record<string, string>): CSSProperties =>
   o as unknown as CSSProperties;
 
 export const metadata: Metadata = {
-  title: ${JSON.stringify(TITLES[htmlFile] || "")},
+  title: ${JSON.stringify(title)},
   description: ${JSON.stringify(description)},
+  openGraph: ${JSON.stringify(openGraph)},
+  twitter: ${JSON.stringify(twitter)},
 };
 
 export default function Page() {

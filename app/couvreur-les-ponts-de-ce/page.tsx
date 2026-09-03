@@ -8,6 +8,8 @@ const css = (o: Record<string, string>): CSSProperties =>
 export const metadata: Metadata = {
   title: "Couvreur aux Ponts-de-Cé (49130) — Couverture Vasseur",
   description: "Couvreur aux Ponts-de-Cé (49130) : toitures de bord de Loire en ardoise et zinc. Démoussage, recherche de fuite, réfection, zinguerie. Couverture Vasseur, 12 ans à Angers, RGE Qualibat, décennale AXA. Devis sous 48 h — 02 41 87 34 12.",
+  openGraph: {"title":"Couvreur aux Ponts-de-Cé (49130) — Couverture Vasseur","description":"Couvreur aux Ponts-de-Cé (49130) : toitures de bord de Loire en ardoise et zinc. Démoussage, recherche de fuite, réfection, zinguerie. Couverture Vasseur, 12 ans à Angers, RGE Qualibat, décennale AXA. Devis sous 48 h — 02 41 87 34 12.","type":"website","locale":"fr_FR","url":"https://couverture-vasseur.fr/couvreur-les-ponts-de-ce","siteName":"Couverture Vasseur","images":[{"url":"https://couverture-vasseur.fr/og-image.png","width":1200,"height":630,"alt":"Couverture Vasseur — couvreur zingueur ardoisier à Angers"}]},
+  twitter: {"card":"summary_large_image","title":"Couvreur aux Ponts-de-Cé (49130) — Couverture Vasseur","description":"Couvreur aux Ponts-de-Cé (49130) : toitures de bord de Loire en ardoise et zinc. Démoussage, recherche de fuite, réfection, zinguerie. Couverture Vasseur, 12 ans à Angers, RGE Qualibat, décennale AXA. Devis sous 48 h — 02 41 87 34 12.","images":["https://couverture-vasseur.fr/og-image.png"]},
 };
 
 export default function Page() {

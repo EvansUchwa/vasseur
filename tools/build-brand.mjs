@@ -50,7 +50,8 @@ async function logoSquare() {
 async function main() {
   // Materialize the square master once, then derive every size from the PNG
   // buffer (avoiding chained sharp pipelines that misbehave with extend).
-  const master = await logoSquare().toBuffer();
+  const sq = await logoSquare();
+  const master = await sq.toBuffer();
 
   // 1) favicon.ico (16/32/48) — replaces the default Next.js icon.
   const sizes = [];

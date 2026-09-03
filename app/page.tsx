@@ -9,6 +9,8 @@ const css = (o: Record<string, string>): CSSProperties =>
 export const metadata: Metadata = {
   title: "Couverture Vasseur — Couvreur zingueur ardoisier à Angers (49)",
   description: "Couvreur zingueur à Angers depuis 12 ans. Réfection de toiture en ardoise d'Anjou, recherche de fuite 7j/7, zinguerie, démoussage. RGE Qualibat, décennale AXA, 47 avis Google 4,9/5. Devis gratuit sous 48 h : 02 41 87 34 12.",
+  openGraph: {"title":"Couverture Vasseur — Couvreur zingueur ardoisier à Angers (49)","description":"Couvreur zingueur à Angers depuis 12 ans. Réfection de toiture en ardoise d'Anjou, recherche de fuite 7j/7, zinguerie, démoussage. RGE Qualibat, décennale AXA, 47 avis Google 4,9/5. Devis gratuit sous 48 h : 02 41 87 34 12.","type":"website","locale":"fr_FR","url":"https://couverture-vasseur.fr/","siteName":"Couverture Vasseur","images":[{"url":"https://couverture-vasseur.fr/og-image.png","width":1200,"height":630,"alt":"Couverture Vasseur — couvreur zingueur ardoisier à Angers"}]},
+  twitter: {"card":"summary_large_image","title":"Couverture Vasseur — Couvreur zingueur ardoisier à Angers (49)","description":"Couvreur zingueur à Angers depuis 12 ans. Réfection de toiture en ardoise d'Anjou, recherche de fuite 7j/7, zinguerie, démoussage. RGE Qualibat, décennale AXA, 47 avis Google 4,9/5. Devis gratuit sous 48 h : 02 41 87 34 12.","images":["https://couverture-vasseur.fr/og-image.png"]},
 };
 
 export default function Page() {

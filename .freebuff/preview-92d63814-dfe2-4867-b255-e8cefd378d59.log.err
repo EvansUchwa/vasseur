@@ -1,0 +1,14 @@
+127.0.0.1 - - [03/Sep/2026 22:33:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET /_next/static/chunks/3y9ybzdbx_ntj.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET /images/acc-artisan.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET /images/acc-ap-apres.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:42] "GET /images/acc-ap-avant.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/1eooa6qxhe-dt.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/2m912stn0vfa6.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/3l04zcqx63h3y.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/16nc9-08gjapm.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/1mh6a-0e61pyc.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2026 22:33:43] "GET /_next/static/chunks/turbopack-0lalso72z2cic.js HTTP/1.1" 304 -
